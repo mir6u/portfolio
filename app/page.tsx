@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "./components/Header";
+import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
   return (

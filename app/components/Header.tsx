@@ -4,10 +4,11 @@ import { TypeAnimation } from "react-type-animation";
 import React from "react";
 import discord from "./images/discord.svg";
 import Image from "next/image";
+import ProjectsSection from "./ProjectsSection";
 
 const Header = () => {
   return (
-    <section className="mx-auto max-w-4xl px-12 sm:px-0">
+    <section className="mx-auto max-w-lg px-12 sm:px-0">
       <article className="text-slate-50 mt-10 lg:mt-20 xl:mt-24 slide-in-left">
         <p className="text-sm font-bold hidden lg:flex gap-3 items-center">
           <span className="rounded-full bg-green-400 h-2 w-2"></span>
@@ -18,7 +19,7 @@ const Header = () => {
             <h1 className="text-white mb-4 text-4xl font-bold sm:text-5xl lg:text-6xl">
               <span>Hello, i'm </span>
               <br />
-              <span className="text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-pink-500">
+              <span className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-500 to-green-600">
                 <TypeAnimation
                   sequence={[
                     "Mirui",
@@ -127,42 +128,43 @@ const Header = () => {
         <hr className="my-5" />
       </article>
       <div>
-        <h2 className="text-white font-bold text-2xl mb-5">My Timeline</h2>
-        <ul className="w-full text-white flex flex-col font-medium text-sm sm:text-lg">
+        <h2 className="text-white font-bold text-2xl mb-3">My Timeline</h2>
+        <ul className="w-full text-white flex flex-col font-normal text-sm sm:text-md">
           <li className="w-full flex flex-col items-end relative mb-4 text-right">
             <div className="w-3 h-3 bg-white rounded-full absolute left-[calc(50%-6px)]"></div>
             <div className="h-24 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
-            <p className="mb-4">08-02-2022</p>
+            <p className="mb-3 font-semibold">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
           <li className="relative mb-4">
             <div className="w-3 h-3 bg-white rounded-full absolute left-[calc(50%-6px)]"></div>
             <div className="h-24 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
-            <p className="mb-4">08-02-2022</p>
+            <p className="mb-3 font-semibold">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
           <li className="w-full mb-4 relative flex flex-col items-end">
             <div className="w-3 h-3 bg-white rounded-full absolute left-[calc(50%-6px)]"></div>
             <div className="h-24 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
-            <p className="mb-4">08-02-2022</p>
+            <p className="mb-3 font-semibold">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
           <li className="relative mb-4">
-            <div className="h-24 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
-            <div className="w-3 h-3 z-20 bg-blue-400 rounded-full absolute scale-120  left-[calc(50%-6px)] animate-ping"></div>
-            <div className="w-3 h-3 z-29 bg-blue-800 rounded-full absolute scale-120  left-[calc(50%-6px)] "></div>
-            <p className="mb-4">08-02-2022</p>
+            <div className="h-20 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
+            <div className="w-3 h-3 z-20 bg-purple-300 rounded-full absolute scale-120  sm:mt-0 left-[calc(50%-6px)] animate-ping"></div>
+            <div className="w-3 h-3 z-29 bg-purple-200 rounded-full absolute scale-120  left-[calc(50%-6px)] "></div>
+            <p className="mb-3 font-semibold">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
           <li className="w-full mb-4 relative flex flex-col items-end">
-            <div className="w-3 h-3 bg-blue-400 rounded-full absolute scale-120 mt-5 sm:mt-0  left-[calc(50%-6px)] animate-ping"></div>
-            <div className="w-3 h-3 bg-blue-800 rounded-full absolute scale-120 mt-5 sm:mt-0  left-[calc(50%-6px)] "></div>
-            <p className="mb-4">08-02-2022</p>
+            <div className="w-3 h-3 bg-purple-300 rounded-full absolute scale-120  left-[calc(50%-6px)] animate-ping"></div>
+            <div className="w-3 h-3 bg-purple-200 rounded-full absolute scale-120  left-[calc(50%-6px)] "></div>
+            <p className="mb-3 font-semibold">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
         </ul>
       </div>
-      <hr className="mt-3" />
+      <hr className="mt-3 mb-4 w-full grid gap-3 grid-cols-1 sm:grid-cols-2" />
+      <ProjectsSection />
     </section>
   );
 };
