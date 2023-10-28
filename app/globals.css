@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  background-image: radial-gradient(gray 0.1rem, transparent 0.1rem),
+    radial-gradient(#fafafa 0.1rem, transparent 0.1rem);
+  background-color: #000001;
+  background-position: 1.4rem 1.4rem, 50px 50px;
+  background-size: 3.5rem 3.5rem;
+  color: rgb(var(--foreground-rgb));
+  
+}
+::selection {
+  background-color: #ffffff;
+  color: black;
+  opacity: 0.3;
+}
+.rs-timeline {
+  direction: ltr;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
