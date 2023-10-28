@@ -117,7 +117,7 @@ const Header = () => {
                 Mail
               </a>
             </div>
-            <p className="text-xl max-w-lg text-gray-400 mt-9">
+            <p className="text-xl sm:text-left text-left max-w-lg text-gray-400 mt-9">
               Hello, I am Mirui, Experienced frontend developer from Russia,
               with about 6 months of expertise in React, Next, Node.js, and
               MySQL. Ready to create innovative web solutions!
@@ -127,37 +127,37 @@ const Header = () => {
         <hr className="my-5" />
       </article>
       <div>
-        <h2 className="text-white font-bold text-2xl">My Timeline</h2>
-        <ul className="w-full text-white flex flex-col font-medium text-lg">
+        <h2 className="text-white font-bold text-2xl mb-5">My Timeline</h2>
+        <ul className="w-full text-white flex flex-col font-medium text-sm sm:text-lg">
           <li className="w-full flex flex-col items-end relative mb-4 text-right">
             <div className="w-3 h-3 bg-white rounded-full absolute left-[calc(50%-6px)]"></div>
-            <div className="h-20 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
-            <p className="">08-02-2022</p>
+            <div className="h-24 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
+            <p className="mb-4">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
           <li className="relative mb-4">
             <div className="w-3 h-3 bg-white rounded-full absolute left-[calc(50%-6px)]"></div>
-            <div className="h-20 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
-            <p>08-02-2022</p>
+            <div className="h-24 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
+            <p className="mb-4">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
           <li className="w-full mb-4 relative flex flex-col items-end">
             <div className="w-3 h-3 bg-white rounded-full absolute left-[calc(50%-6px)]"></div>
-            <div className="h-20 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
-            <p>08-02-2022</p>
+            <div className="h-24 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
+            <p className="mb-4">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
           <li className="relative mb-4">
-            <div className="h-20 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
+            <div className="h-24 w-0.5 bg-white absolute left-[calc(50%-1px)]"></div>
             <div className="w-3 h-3 z-20 bg-blue-400 rounded-full absolute scale-120  left-[calc(50%-6px)] animate-ping"></div>
             <div className="w-3 h-3 z-29 bg-blue-800 rounded-full absolute scale-120  left-[calc(50%-6px)] "></div>
-            <p>08-02-2022</p>
+            <p className="mb-4">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
           <li className="w-full mb-4 relative flex flex-col items-end">
-            <div className="w-3 h-3 bg-blue-400 rounded-full absolute scale-120  left-[calc(50%-6px)] animate-ping"></div>
-            <div className="w-3 h-3 bg-blue-800 rounded-full absolute scale-120  left-[calc(50%-6px)] "></div>
-            <p>08-02-2022</p>
+            <div className="w-3 h-3 bg-blue-400 rounded-full absolute scale-120 mt-5 sm:mt-0  left-[calc(50%-6px)] animate-ping"></div>
+            <div className="w-3 h-3 bg-blue-800 rounded-full absolute scale-120 mt-5 sm:mt-0  left-[calc(50%-6px)] "></div>
+            <p className="mb-4">08-02-2022</p>
             <p>Finished doing sum</p>
           </li>
         </ul>
