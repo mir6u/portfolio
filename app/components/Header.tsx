@@ -162,6 +162,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
+      <hr className="mt-3" />
     </section>
   );
 };
