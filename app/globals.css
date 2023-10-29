@@ -33,7 +33,13 @@ body {
   transition: all 1s;
   transform: translateY(10%);
 }
+.pcarde {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-30%);
+}
 .sh {
   opacity: 1;
   transform: translateY(0%);
+  transform: translateX(0%);
 }

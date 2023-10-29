@@ -15,16 +15,14 @@ const Header = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('sh')
-        } else {
-          entry.target.classList.remove('sh')
+          entry.target.classList.add("sh");
         }
-      })
-    })
-    observer.observe(myRef3.current!)
-  }, [])
+      });
+    });
+    observer.observe(myRef3.current!);
+  }, []);
   return (
-    <section ref={myRef3} className="mx-auto pcard max-w-lg px-12 sm:px-0">
+    <section ref={myRef3} className="mx-auto pcarde max-w-lg px-12 sm:px-0">
       <article className="text-slate-50 mt-10 lg:mt-20 xl:mt-24 slide-in-left">
         <p className="text-sm font-bold hidden lg:flex gap-3 items-center">
           <span className="rounded-full bg-green-400 h-2 w-2"></span>
@@ -117,18 +115,20 @@ const Header = () => {
               >
                 <span className="inline-block mr-2 slide-in-bottom overflow-hidden">
                   <svg
+                    enable-background="new 0 0 64 64"
+                    version="1.1"
                     stroke="currentColor"
-                    fill="none"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    height="18"
-                    width="18"
+                    fill="currentColor"
+                    viewBox="0 0 64 64"
+                    xmlSpace="preserve"
                     xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    width={16}
                   >
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
+                    <g id="Glyph_copy_2">
+                      <path d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z" />
+                      <path d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z" />
+                    </g>
                   </svg>
                 </span>
                 Mail
@@ -137,13 +137,13 @@ const Header = () => {
             <p className="text-xl sm:text-left text-left max-w-lg text-gray-400 mt-9">
               Hello, I am Mirui, Experienced frontend developer from Russia,
               with about 6 months of expertise in React, Next, Node.js, and
-              MySQL. Ready to create innovative web solutions!
+              MySQL. Ready to turn your design into a functional
             </p>
           </div>
         </div>
         <hr className="my-5" />
       </article>
-      <Timeline/>
+      <Timeline />
       <hr className="mt-3 mb-4 w-full grid gap-3 grid-cols-1 sm:grid-cols-2" />
       <ProjectsSection />
     </section>
