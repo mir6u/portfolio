@@ -43,7 +43,7 @@ const Timeline = () => {
           <div className="h-20 w-0.5 bg-gradient-to-r from-cyan-300 to-green-300 bg-white absolute left-[calc(50%-1px)]"></div>
           <div className="w-3 h-3 z-20 bg-gradient-to-r from-cyan-400 to-green-300 rounded-full absolute scale-120  sm:mt-0 left-[calc(50%-6px)] animate-ping"></div>
           <div className="w-3 h-3 z-29 bg-gradient-to-r from-cyan-300 to-green-300 rounded-full absolute scale-120  left-[calc(50%-6px)] "></div>
-          <p className="mb-3 font-semibold">08-02-2022</p>
+          <p className="mb-3 font-semibold">6 P.M. - 11:30 P.M. </p>
           <p>Friend etc.</p>
         </li>
         <li className="w-full mb-4 relative flex flex-col items-end">

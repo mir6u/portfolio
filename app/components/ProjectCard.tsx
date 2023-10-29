@@ -27,7 +27,7 @@ const ProjectCard = ({ title, description, icons, href }: Props) => {
   
   return (
     <>
-      <div ref={myRef} className="bg-[#333639]  p-6 pcard rounded-lg shadow-lg text-slate-100 relative">
+      <div ref={myRef} className="bg-[#16161D]  p-6 pcard rounded-2xl shadow-xl text-slate-100 relative">
         <a className="group" target="_blank" href={href}>
           <div className="flex justify-between">
             <div className="text-xl font-semibold text-slate-50">{title}</div>
@@ -45,7 +45,7 @@ const ProjectCard = ({ title, description, icons, href }: Props) => {
               </svg>
             </div>
           </div>
-          <p className="text-[#94a3b8] mt-3 text-base font-medium">
+          <p className="text-[#aebdd1] mt-3 text-base font-medium">
             {description}
           </p>
         </a>
