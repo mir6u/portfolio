@@ -6,10 +6,25 @@ import discord from "./images/discord.svg";
 import Image from "next/image";
 import ProjectsSection from "./ProjectsSection";
 import Timeline from "./Timeline";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 const Header = () => {
+  const myRef3 = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('sh')
+        } else {
+          entry.target.classList.remove('sh')
+        }
+      })
+    })
+    observer.observe(myRef3.current!)
+  }, [])
   return (
-    <section className="mx-auto max-w-lg px-12 sm:px-0">
+    <section ref={myRef3} className="mx-auto pcard max-w-lg px-12 sm:px-0">
       <article className="text-slate-50 mt-10 lg:mt-20 xl:mt-24 slide-in-left">
         <p className="text-sm font-bold hidden lg:flex gap-3 items-center">
           <span className="rounded-full bg-green-400 h-2 w-2"></span>

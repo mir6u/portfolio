@@ -1,8 +1,21 @@
 import React from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 const Timeline = () => {
+  const myRef2 = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('sh')
+        } 
+      })
+    })
+    observer.observe(myRef2.current!)
+  }, [])
   return (
-    <div>
+    <div ref={myRef2} className="pcard">
       <h2 className="text-white font-bold text-2xl mb-3">My Daily Routine</h2>
       <ul className="w-full text-white flex flex-col font-normal text-sm sm:text-md">
         <li className="w-full flex flex-col items-end relative mb-4 text-right">
