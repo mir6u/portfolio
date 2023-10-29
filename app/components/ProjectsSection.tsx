@@ -237,7 +237,6 @@ const ProjectsSection = () => {
   ];
   return (
     <section className="">
-      <h2 className="text-slate-200 text-2xl font-bold mb-4">My Projects</h2>
       <div className="w-full grid gap-3 grid-cols-1 sm:grid-cols-2">
         {array.map((card) => {
           return (

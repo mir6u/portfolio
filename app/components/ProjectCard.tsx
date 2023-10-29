@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import { useRef } from "react";
 
@@ -26,7 +27,7 @@ const ProjectCard = ({ title, description, icons, href }: Props) => {
   
   return (
     <>
-      <div ref={myRef} className="bg-[#333639] p-6 pcard rounded-lg shadow-lg text-slate-100 relative">
+      <div ref={myRef} className="bg-[#333639]  p-6 pcard rounded-lg shadow-lg text-slate-100 relative">
         <a className="group" target="_blank" href={href}>
           <div className="flex justify-between">
             <div className="text-xl font-semibold text-slate-50">{title}</div>

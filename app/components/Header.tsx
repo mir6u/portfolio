@@ -145,6 +145,7 @@ const Header = () => {
       </article>
       <Timeline />
       <hr className="mt-3 mb-4 w-full grid gap-3 grid-cols-1 sm:grid-cols-2" />
+      <h2 className="text-slate-200 text-2xl font-bold mb-4">My Projects</h2>
       <ProjectsSection />
     </section>
   );
