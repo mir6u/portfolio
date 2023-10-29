@@ -134,7 +134,7 @@ const Header = () => {
                 Mail
               </a>
             </div>
-            <p className="text-xl sm:text-left text-left max-w-lg text-gray-400 mt-9">
+            <p className="text-xl sm:text-left font-semibold text-left max-w-lg text-slate-400 mt-9">
               Hello, I am Mirui, Experienced frontend developer from Russia,
               with about 6 months of expertise in React, Next, Node.js, and
               MySQL. Ready to turn your design into a functional
