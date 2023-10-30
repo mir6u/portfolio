@@ -22,7 +22,7 @@ const Header = () => {
     observer.observe(myRef3.current!);
   }, []);
   return (
-    <section ref={myRef3} className="mx-auto pcarde max-w-lg px-12 sm:px-0">
+    <section ref={myRef3} className="mx-auto pcarde max-w-xl px-12 sm:px-0">
       <article className="text-slate-50 mt-10 lg:mt-20 xl:mt-24 slide-in-left">
         <p className="text-sm font-bold hidden lg:flex gap-3 items-center">
           <span className="rounded-full bg-green-400 h-2 w-2"></span>
@@ -36,7 +36,7 @@ const Header = () => {
               <span className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-500 to-green-600">
                 <TypeAnimation
                   sequence={[
-                    "Mirui",
+                    "Саша пишов нахуй",
                     2000,
                     "Web Developer",
                     2000,
