@@ -36,7 +36,7 @@ const Header = () => {
               <span className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-500 to-green-600">
                 <TypeAnimation
                   sequence={[
-                    "Саша пишов нахуй",
+                    "Mirui",
                     2000,
                     "Web Developer",
                     2000,
