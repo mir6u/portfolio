@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import TimeLineLine from "./TimeLineLine";
 
 interface Props {
   timestamp: string;
@@ -38,7 +39,7 @@ const TimelineComponent = ({
         <div ref={myRefT1} className="w-3 pcard h-3 z-20 bg-gradient-to-r from-cyan-400 to-green-300 rounded-full absolute scale-120  sm:mt-0 left-[calc(50%-6px)] animate-ping"></div>
         <div ref={myRefT2} className="w-3 pcard h-3 z-29 bg-gradient-to-r from-cyan-300 to-green-300 rounded-full absolute scale-120  left-[calc(50%-6px)] "></div>
         {isNotLast ? (
-          <div className="h-[5rem] w-0.5 bg-gradient-to-r from-cyan-300 to-green-300 bg-white absolute left-[calc(50%-1px)]"></div>
+          <TimeLineLine/>
         ) : null}
       </div>
 
