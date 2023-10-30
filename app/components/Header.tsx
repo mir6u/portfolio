@@ -5,7 +5,7 @@ import React from "react";
 import discord from "./images/discord.svg";
 import Image from "next/image";
 import ProjectsSection from "./ProjectsSection";
-import Timeline from "./Timeline";
+import TimelineSection from "./TimelineSection";
 import { useEffect } from "react";
 import { useRef } from "react";
 
@@ -49,6 +49,7 @@ const Header = () => {
                 />
               </span>
             </h1>
+            
             <div className="flex flex-col sm:flex-row mt-9 gap-3 ">
               <a
                 target="_blank"
@@ -137,13 +138,13 @@ const Header = () => {
             <p className="text-xl sm:text-left font-semibold text-left max-w-lg text-slate-400 mt-9">
               Hello, I am Mirui, Experienced frontend developer from Russia,
               with about 6 months of expertise in React, Next, Node.js, and
-              MySQL. Ready to turn your design into a functional
+              MySQL. Ready to turn your design into a functional website
             </p>
           </div>
         </div>
         <hr className="my-5" />
       </article>
-      <Timeline />
+      <TimelineSection />
       <hr className="mt-3 mb-4 w-full grid gap-3 grid-cols-1 sm:grid-cols-2" />
       <h2 className="text-slate-200 text-2xl font-bold mb-4">My Projects</h2>
       <ProjectsSection />
