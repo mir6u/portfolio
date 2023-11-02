@@ -7,12 +7,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mirui's Portfolio",
-  description: "My Personal Portfolio",
+  description: "I'm an expirienced Front end developer from Russia and currently learning Back end to become a FullStack developer",
   keywords: ["Mirui", "NextJS", "React", "Portfolio", "Frontend"],
   openGraph: {
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png",
+        url: "https://avatars.githubusercontent.com/u/139065133?v=4",
         width: 200,
         height: 200,
       },
