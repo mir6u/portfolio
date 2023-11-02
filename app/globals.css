@@ -44,21 +44,26 @@ body {
   transform: translateX(0%);
 }
 
-.tile {
-  display: inline-block;
-  opacity: 0;
-  transform: scale(.3);
-  background: lightblue;
-  animation: bouncein 1s .5s cubic-bezier(0, 2.5, 1, -.25) forwards; 
+.tr {
+  animation: to-right 500ms;
 }
-@keyframes bouncein { 
-  from { opacity: 0; transform: scale(.3); }
-  to { opacity: 1; transform: scale(1); }
+.tl {
+  animation: to-left 500ms;
 }
-.bounceout {
-  animation: bounceout 1s cubic-bezier(0, 2.5, 1, -.25) forwards;
+
+@keyframes to-right {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(250%);
+  }
 }
-@keyframes bounceout {
-  from { opacity: 1; transform: scale(1); } 
-  to { opacity: 0; transform: scale(.1); }
+@keyframes to-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-250%);
+  }
 }

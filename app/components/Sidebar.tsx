@@ -19,6 +19,7 @@ const buttons = [
       </svg>
     ),
     label: "Home",
+    isRight: true
   },
   {
     pathname: "/projects",
@@ -34,6 +35,7 @@ const buttons = [
       </svg>
     ),
     label: "Projects",
+    isRight: false
   },
   {
     pathname: "https://github.com/mir6u",
@@ -51,6 +53,7 @@ const buttons = [
       </svg>
     ),
     label: "GitHub",
+    isRight: true
   },
   {
     pathname: "mailto:discordbackupacc1234@gmail.com",
@@ -73,6 +76,7 @@ const buttons = [
       </svg>
     ),
     label: "Mail me",
+    isRight: false
   },
 ];
 
@@ -134,10 +138,11 @@ l57 -27 810 0 c924 0 870 -5 969 86 74 67 100 129 101 234 0 68 -4 89 -28 137
         </button>
       </nav>
       {isOpen && (
-        <div
-          onClick={() => {
-            setIsOpen(false);
-          }}
+        <div onClick={() => {
+          setTimeout(() => {
+            setIsOpen(false)
+          }, 300);
+        }}
           className="h-screen w-full  fixed bg-[#000008]/70 backdrop-blur-sm z-[5555] inset-0"
         >
           <aside className="fixed text-slate-100 rounded-lg flex flex-col h-full w-full justify-center items-center p-4 gap-5 slide-in-elliptic-top-fwd">
@@ -148,6 +153,7 @@ l57 -27 810 0 c924 0 870 -5 969 86 74 67 100 129 101 234 0 68 -4 89 -28 137
                   pathname={button.pathname}
                   label={button.label}
                   svg={button.svg}
+                  isRight={button.isRight}
                 />
               );
             })}

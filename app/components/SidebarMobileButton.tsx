@@ -6,21 +6,31 @@ interface Props {
   pathname: string;
   svg: any;
   label: string;
+  isRight: boolean;
 }
 
-const SidebarMobileButton = ({pathname, svg, label}:Props) => {
-  const ref = useRef<HTMLButtonElement>(null)
-  const router = useRouter()
-  const currentPath = usePathname()
+const SidebarMobileButton = ({ pathname, svg, label, isRight }: Props) => {
+  const ref = useRef<HTMLButtonElement>(null);
+  const router = useRouter();
+  const currentPath = usePathname();
   return (
     <button
       ref={ref}
       onClick={() => {
-        router.push("/");
+        document.querySelectorAll(".rightsc").forEach((el) => {
+          el.classList.add('tr')
+        })
+        document.querySelectorAll(".leftsc").forEach((el) => {
+          el.classList.add('tl')
+        })
+        setTimeout(() => {
+          router.push(pathname);
+        }, 300);
+        router.prefetch(pathname)
       }}
       className={`flex ${
         currentPath === pathname ? "bg-[#333638]" : null
-      } hover:bg-[#5f6467] transition-all duration-300 hover:bg-opacity-70  items-center gap-2 py-3 w-56 px-8 rounded-full`}
+      } ${isRight ? "rightsc" : 'leftsc'} hover:bg-[#5f6467] btn transition-all duration-300 hover:bg-opacity-70  items-center gap-2 py-3 w-56 px-8 rounded-full`}
     >
       {svg}
       <p>{label}</p>
