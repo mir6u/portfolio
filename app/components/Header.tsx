@@ -112,7 +112,7 @@ const Header = () => {
               <a
                 target="_blank"
                 className="transition-all duration-500 items-center font-medium text-slate-50 flex justify-center hover:scale-110 hover:bg-white hover:text-black bg-[#333638] py-3 px-6 rounded-full"
-                href="mailto:placeholder" // change later
+                href="mailto:fordiscord200824@gmail.com"
               >
                 <span className="inline-block mr-2 slide-in-bottom overflow-hidden">
                   <svg

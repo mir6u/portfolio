@@ -30,10 +30,10 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
         <meta
-          content="https://embed.com/this-is-the-site-url"
+          content="https://mirui.ru/"
           property="og:url"
         />
-        <meta content="https://embed.com/embedimage.png" property="og:image" />
+        <meta content="logo.ico" property="og:image" />
         <meta content="#43B581" data-react-helmet="true" name="theme-color" />
       </head>
       <body className={inter.className}>{children}</body>
