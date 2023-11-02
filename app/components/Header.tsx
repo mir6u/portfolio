@@ -22,11 +22,11 @@ const Header = () => {
     observer.observe(myRef3.current!);
   }, []);
   return (
-    <section ref={myRef3} className="mx-auto pcarde max-w-xl px-12 sm:px-0">
+    <section ref={myRef3} className="mx-auto pcarde max-w-lg px-12 sm:px-0">
       <article className="text-slate-50 mt-10 lg:mt-20 xl:mt-24 slide-in-left">
         <p className="text-sm font-bold hidden lg:flex gap-3 items-center">
-          <span className="rounded-full bg-green-400 h-2 w-2"></span>
-          Online.
+          <span className="rounded-full bg-red-600 h-2 w-2"></span>
+            Do not disturb
         </p>
         <div className="grid max-w-xl mt-5">
           <div className="col-span-7 place-self-center text-center sm:text-left">
@@ -135,10 +135,10 @@ const Header = () => {
                 Mail
               </a>
             </div>
-            <p className="text-xl sm:text-left font-semibold text-left max-w-lg text-slate-400 mt-9">
+            <p className="text-xl sm:text-left font-normal text-left max-w-lg text-slate-300 mt-9">
               Hello, I am Mirui, Experienced frontend developer from Russia,
-              with about 6 months of expertise in React, Next, Node.js, and
-              MySQL. Ready to turn your design into a functional website
+              with about 6 months of expertise in React, Next, Node.js,
+              MySQL and more. Ready to turn your design into a functional website
             </p>
           </div>
         </div>
