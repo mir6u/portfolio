@@ -2,8 +2,6 @@
 "use client";
 import { TypeAnimation } from "react-type-animation";
 import React from "react";
-import discord from "./images/discord.svg";
-import Image from "next/image";
 import ProjectsSection from "./ProjectsSection";
 import TimelineSection from "./TimelineSection";
 import { useEffect } from "react";
