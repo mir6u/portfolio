@@ -53,7 +53,7 @@ const MainContent = () => {
             <div className="flex flex-col sm:flex-row mt-9 gap-3 ">
               <a
                 target="_blank"
-                className="items-center duration-500 font-medium text-slate-50 flex justify-center hover:scale-110 hover:bg-white hover:text-black bg-[#333638] py-3 px-6 rounded-full"
+                className="items-center duration-500 font-medium text-slate-50 flex justify-center hover:scale-110 hover:bg-white hover:text-black bg-[#16161D] py-3 px-6 rounded-full"
                 href="https://discordapp.com/users/977627340605628447"
               >
                 <span className="inline-block mr-2 slide-in-bottom overflow-hidden">
@@ -91,7 +91,7 @@ const MainContent = () => {
               </a>
               <a
                 target="_blank"
-                className="items-center duration-500 font-medium text-slate-50 flex justify-center hover:scale-110 hover:bg-white hover:text-black bg-[#333638] py-3 px-6 rounded-full"
+                className="items-center duration-500 font-medium text-slate-50 flex justify-center hover:scale-110 hover:bg-white hover:text-black bg-[#16161D] py-3 px-6 rounded-full"
                 href="https://www.github.com/mir6u/"
               >
                 <span className="inline-block mr-2 slide-in-bottom overflow-hidden">
@@ -111,7 +111,7 @@ const MainContent = () => {
               </a>
               <a
                 target="_blank"
-                className="transition-all duration-500 items-center font-medium text-slate-50 flex justify-center hover:scale-110 hover:bg-white hover:text-black bg-[#333638] py-3 px-6 rounded-full"
+                className="transition-all duration-500 items-center font-medium text-slate-50 flex justify-center hover:scale-110 hover:bg-white hover:text-black bg-[#16161D] py-3 px-6 rounded-full"
                 href="mailto:fordiscord200824@gmail.com"
               >
                 <span className="inline-block mr-2 slide-in-bottom overflow-hidden">
