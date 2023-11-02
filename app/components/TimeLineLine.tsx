@@ -7,7 +7,7 @@ const TimeLineLine = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("sh");
-        } 
+        }
       });
     });
     observer.observe(myRef.current!);

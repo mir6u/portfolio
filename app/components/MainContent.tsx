@@ -6,8 +6,10 @@ import ProjectsSection from "./ProjectsSection";
 import TimelineSection from "./TimelineSection";
 import { useEffect } from "react";
 import { useRef } from "react";
+import Link from "next/link";
+import TechSection from "./TechSection";
 
-const Header = () => {
+const MainContent = () => {
   const myRef3 = useRef<HTMLInputElement>(null);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -24,11 +26,11 @@ const Header = () => {
       <article className="text-slate-50 mt-10 lg:mt-20 xl:mt-24 slide-in-left">
         <p className="text-sm font-bold hidden lg:flex gap-3 items-center">
           <span className="rounded-full bg-red-600 h-2 w-2"></span>
-            Do not disturb
+          Do not disturb
         </p>
         <div className="grid max-w-xl mt-5">
           <div className="col-span-7 place-self-center text-center sm:text-left">
-            <h1 className="text-white mb-4 text-4xl font-bold sm:text-5xl lg:text-6xl">
+            <h1 className="text-white mb-4 text-4xl font-semibold sm:text-5xl lg:text-6xl">
               <span>Hello, i'm </span>
               <br />
               <span className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-500 to-green-600">
@@ -47,7 +49,7 @@ const Header = () => {
                 />
               </span>
             </h1>
-            
+
             <div className="flex flex-col sm:flex-row mt-9 gap-3 ">
               <a
                 target="_blank"
@@ -135,8 +137,8 @@ const Header = () => {
             </div>
             <p className="text-xl sm:text-left font-normal text-left max-w-lg text-slate-300 mt-9">
               Hello, I am Mirui, Experienced frontend developer from Russia,
-              with about 6 months of expertise in React, Next, Node.js,
-              MySQL and more. Ready to turn your design into a functional website
+              with about 6 months of expertise in React, Next, Node.js, MySQL
+              and more. Ready to turn your design into a functional website
             </p>
           </div>
         </div>
@@ -144,10 +146,14 @@ const Header = () => {
       </article>
       <TimelineSection />
       <hr className="mt-3 mb-4 w-full grid gap-3 grid-cols-1 sm:grid-cols-2" />
-      <h2 className="text-slate-200 text-2xl font-bold mb-4">My Projects</h2>
+      <Link href="/projects" className="text-slate-200 text-2xl font-bold">
+        My Projects
+      </Link>
       <ProjectsSection />
+      <hr className="my-5" />
+      <TechSection/>
     </section>
   );
 };
 
-export default Header;
+export default MainContent;

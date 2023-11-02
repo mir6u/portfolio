@@ -2,6 +2,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import React, { useRef, useState } from "react";
 import SidebarMobileButton from "./SidebarMobileButton";
+import LGButton from "./LGButton";
 
 const buttons = [
   {
@@ -19,7 +20,8 @@ const buttons = [
       </svg>
     ),
     label: "Home",
-    isRight: true
+    isRight: true,
+    isBordering: true,
   },
   {
     pathname: "/projects",
@@ -35,7 +37,8 @@ const buttons = [
       </svg>
     ),
     label: "Projects",
-    isRight: false
+    isRight: false,
+    isBordering: false
   },
   {
     pathname: "https://github.com/mir6u",
@@ -53,7 +56,8 @@ const buttons = [
       </svg>
     ),
     label: "GitHub",
-    isRight: true
+    isRight: true,
+    isBordering: false
   },
   {
     pathname: "mailto:discordbackupacc1234@gmail.com",
@@ -76,7 +80,41 @@ const buttons = [
       </svg>
     ),
     label: "Mail me",
-    isRight: false
+    isRight: false,
+    isBordering: false
+  },
+  {
+    pathname: "https://blog.mirui.ru",
+    svg: (
+      <svg
+        version="1.1"
+        id="Uploaded to svgrepo.com"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        width="25px"
+        height="25px"
+        viewBox="0 0 32 32"
+        fill="currentColor"
+        xmlSpace="preserve"
+      >
+        <path
+          className="stone_een"
+          d="M6,28c0,1.105-0.895,2-2,2c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2C5.105,26,6,26.895,6,28z M1,30
+	c-0.552,0-1,0.448-1,1c0,0.552,0.448,1,1,1s1-0.448,1-1C2,30.448,1.552,30,1,30z M27.576,20.81c0.256,1.805-0.288,3.701-1.676,5.089
+	c-1.167,1.167-2.693,1.738-4.222,1.738c-0.29,0-0.58-0.021-0.867-0.061C19.716,29.044,17.972,30,16,30s-3.716-0.956-4.81-2.424
+	c-0.288,0.041-0.577,0.061-0.867,0.061c-1.529,0-3.055-0.571-4.222-1.738c-1.388-1.388-1.933-3.285-1.676-5.089
+	C2.956,19.716,2,17.972,2,16s0.956-3.716,2.424-4.81C4.168,9.385,4.713,7.489,6.101,6.1c1.167-1.167,2.693-1.738,4.222-1.738
+	c0.29,0,0.58,0.021,0.867,0.061C12.284,2.956,14.028,2,16,2s3.716,0.956,4.81,2.424c0.288-0.041,0.577-0.061,0.867-0.061
+	c1.529,0,3.055,0.571,4.222,1.738c1.388,1.388,1.933,3.285,1.676,5.089C29.044,12.284,30,14.028,30,16S29.044,19.716,27.576,20.81z
+	 M20,17.5c0-0.276-0.224-0.5-0.5-0.5h-7c-0.276,0-0.5,0.224-0.5,0.5c0,0.276,0.224,0.5,0.5,0.5h7C19.776,18,20,17.776,20,17.5z
+	 M20,15.5c0-0.276-0.224-0.5-0.5-0.5h-7c-0.276,0-0.5,0.224-0.5,0.5c0,0.276,0.224,0.5,0.5,0.5h7C19.776,16,20,15.776,20,15.5z
+	 M20,13.5c0-0.276-0.224-0.5-0.5-0.5h-7c-0.276,0-0.5,0.224-0.5,0.5c0,0.276,0.224,0.5,0.5,0.5h7C19.776,14,20,13.776,20,13.5z"
+        />
+      </svg>
+    ),
+    label: "Thoughts",
+    isRight: false,
+    isBordering: true,
   },
 ];
 
@@ -138,11 +176,12 @@ l57 -27 810 0 c924 0 870 -5 969 86 74 67 100 129 101 234 0 68 -4 89 -28 137
         </button>
       </nav>
       {isOpen && (
-        <div onClick={() => {
-          setTimeout(() => {
-            setIsOpen(false)
-          }, 300);
-        }}
+        <div
+          onClick={() => {
+            setTimeout(() => {
+              setIsOpen(false);
+            }, 300);
+          }}
           className="h-screen w-full  fixed bg-[#000008]/70 backdrop-blur-sm z-[5555] inset-0"
         >
           <aside className="fixed text-slate-100 rounded-lg flex flex-col h-full w-full justify-center items-center p-4 gap-5 slide-in-elliptic-top-fwd">
@@ -160,7 +199,20 @@ l57 -27 810 0 c924 0 870 -5 969 86 74 67 100 129 101 234 0 68 -4 89 -28 137
           </aside>
         </div>
       )}
-      <nav></nav>
+      <div className="hidden lg:block">
+        <aside className="fixed bg-[#333638] p-1.5 text-white border transform left-8 top-[50%] translate-y-[-50%] justify-between flex flex-col border-slate-100/5 rounded-full gap-5">
+          {buttons.map((button) => {
+            return (
+              <LGButton
+                pathname={button.pathname}
+                svg={button.svg}
+                key={button.label}
+                isBordering={button.isBordering}
+              />
+            );
+          })}
+        </aside>
+      </div>
     </>
   );
 };
