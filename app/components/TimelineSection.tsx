@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import TimelineComponent from "./TimelineComponent";
 
 const TimelineSection = () => {
+  console.log(48 + 23 + 56 + 348 + 17 + 41 + 220 + 262 + 68 + 159 + 28)
   return (
     <div>
       <h2 className="text-white font-bold text-2xl mb-3">My Daily Routine</h2>
