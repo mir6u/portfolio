@@ -29,12 +29,16 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+        <meta property="twitter:title" content="Mirui | Portfolio"></meta>
+        <meta property="twitter:description" content="I'm an expirienced Front end developer from Russia and currently learning Back end to become a FullStack developer"></meta>
         <meta
           content="https://mirui.ru/"
           property="og:url"
         />
+        <meta property="og:title" content="Mirui | Portfolio"></meta>
         <meta content="logo.ico" property="og:image" />
         <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+        <meta property="og:description" content="I'm an expirienced Front end developer from Russia and currently learning Back end to become a FullStack developer" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
