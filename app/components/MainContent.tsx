@@ -24,9 +24,9 @@ const MainContent = () => {
   return (
     <section ref={myRef3} className="mx-auto pcarde max-w-lg px-12 sm:px-0">
       <article className="text-slate-50 mt-10 lg:mt-20 xl:mt-24 slide-in-left">
-        <p className="text-sm font-bold hidden lg:flex gap-3 items-center">
+        <p className="text-sm font-bold hidden lg:flex gap-1 items-center">
           <span className="rounded-full bg-red-600 h-2 w-2"></span>
-          Do not disturb
+          working on <Link className="underline text-blue-400" href={'https://yeh.lol'}>yeh.lol</Link>
         </p>
         <div className="grid max-w-xl mt-5">
           <div className="col-span-7 place-self-center text-center sm:text-left">
@@ -151,7 +151,7 @@ const MainContent = () => {
       </Link>
       <ProjectsSection />
       <hr className="my-5" />
-      <TechSection/>
+      <TechSection />
     </section>
   );
 };
