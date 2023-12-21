@@ -88,9 +88,9 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "Old Portfolio",
+      title: "Yeh.lol Biolink",
       description:
-        "This is the old version of my portfolio website. Not finished. Click to view it on GitHub",
+        "A Biolink website that i solely developed. Still in progress. Tap to view it. ",
       icons: [
         <svg
           key={6}
