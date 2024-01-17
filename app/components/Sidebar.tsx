@@ -60,7 +60,7 @@ const buttons = [
     isBordering: false
   },
   {
-    pathname: "mailto:discordbackupacc1234@gmail.com",
+    pathname: "mailto:mirui@yeh.lol",
     svg: (
       <svg
         enable-background="new 0 0 64 64"
@@ -87,22 +87,22 @@ const buttons = [
     pathname: "https://blog.mirui.ru",
     svg: (
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="25" height="25" viewBox="0 0 24.000000 24.000000"
- preserveAspectRatio="xMidYMid meet">
+        width="25" height="25" viewBox="0 0 24.000000 24.000000"
+        preserveAspectRatio="xMidYMid meet">
 
-<g transform="translate(0.000000,24.000000) scale(0.100000,-0.100000)"
-fill="currentColor" stroke="none">
-<path d="M22 218 c-16 -16 -16 -160 0 -176 14 -14 88 -16 88 -2 0 6 -18 10
+        <g transform="translate(0.000000,24.000000) scale(0.100000,-0.100000)"
+          fill="currentColor" stroke="none">
+          <path d="M22 218 c-16 -16 -16 -160 0 -176 14 -14 88 -16 88 -2 0 6 -18 10
 -40 10 l-40 0 0 55 0 55 90 0 c73 0 90 -3 90 -15 0 -8 5 -15 10 -15 14 0 12
 74 -2 88 -16 16 -180 16 -196 0z m188 -23 c0 -12 -17 -15 -90 -15 -73 0 -90 3
 -90 15 0 12 17 15 90 15 73 0 90 -3 90 -15z"/>
-<path d="M48 193 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z"/>
-<path d="M156 79 c-60 -65 -33 -93 33 -34 34 31 39 40 30 56 -14 27 -22 24
+          <path d="M48 193 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+          <path d="M156 79 c-60 -65 -33 -93 33 -34 34 31 39 40 30 56 -14 27 -22 24
 -63 -22z m54 11 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0
 10 -4 10 -10z m-39 -43 c-11 -12 -24 -18 -27 -14 -10 10 27 48 38 41 6 -4 1
 -16 -11 -27z"/>
-</g>
-</svg>
+        </g>
+      </svg>
 
     ),
     label: "Thoughts",
