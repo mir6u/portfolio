@@ -1,4 +1,3 @@
-import Image from "next/image";
 import MainContent from "./components/MainContent";
 import ProjectsSection from "./components/ProjectsSection";
 import Sidebar from "./components/Sidebar";

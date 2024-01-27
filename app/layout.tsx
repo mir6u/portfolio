@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import logo from "./logo.webp";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,7 +41,9 @@ export default function RootLayout({
         <meta content="#43B581" data-react-helmet="true" name="theme-color" />
         <meta property="og:description" content="I'm an expirienced Front end developer from Russia and currently learning Back end to become a FullStack developer" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+        <Analytics />
+      </body>
     </html>
   );
 }
